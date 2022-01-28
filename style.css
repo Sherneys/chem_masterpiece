@@ -1,0 +1,1099 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  min-height: 100vh;
+  background-color: #3c394b;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+body .navbar-container {
+  position: fixed;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+body .navbar-container .navbar {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+body .navbar-container .navbar .nav-item {
+  margin: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  opacity: 0.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+body .navbar-container .navbar .nav-item:hover {
+  opacity: 1;
+}
+
+body .container {
+  min-height: 100vh;
+  max-width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 125px;
+  position: relative;
+}
+
+.gradient-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.gradient-circle.blue1 {
+  height: 800px;
+  width: 800px;
+  top: -298.65px;
+  left: -267.89px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4361ee), to(#4cc9f0));
+  background: linear-gradient(#4361ee, #4cc9f0);
+  -webkit-transform: rotate(-115deg);
+          transform: rotate(-115deg);
+}
+
+.gradient-circle.pink1 {
+  height: 600px;
+  width: 600px;
+  top: 412px;
+  left: 1120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b5179e), to(#f72585));
+  background: linear-gradient(#b5179e, #f72585);
+  -webkit-transform: rotate(-115deg);
+          transform: rotate(-115deg);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.gradient-circle.orange1 {
+  height: 450px;
+  width: 450px;
+  bottom: -100px;
+  right: -150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbc00), to(#ff0058));
+  background: linear-gradient(#ffbc00, #ff0058);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: 3;
+}
+
+.gradient-circle.yellow1 {
+  height: 500px;
+  width: 500px;
+  bottom: -60px;
+  left: -50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffff66), to(#fc6e22));
+  background: linear-gradient(#ffff66, #fc6e22);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.gradient-circle.purple1 {
+  height: 600px;
+  width: 600px;
+  top: -200px;
+  left: -200px;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.Hero {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Hero a {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  margin: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.Hero a i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.Hero a:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.Hero .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+}
+
+.Hero .left img {
+  width: 70%;
+}
+
+.Hero .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 100%;
+}
+
+.Hero .right .text-container {
+  text-align: right;
+}
+
+.Hero .right .text-container h1 {
+  font-size: 100px;
+  line-height: 70px;
+}
+
+.Hero .right .text-container h2 {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.Hero .right .text-container h5 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 50px;
+  opacity: 0.5;
+}
+
+.Content .arrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  margin: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.Content .arrow i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.Content .arrow:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.Content .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Content .card-container .card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 30px;
+  padding: 0 30px;
+  z-index: 1;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Content .card-container .card .content:hover {
+  height: 520px;
+}
+
+.Content .card-container .card .content span {
+  font-weight: 700;
+  font-size: 200px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  top: -70px;
+  left: 10px;
+}
+
+.Content .card-container .card .content h1 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.Content .card-container .card .content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.Content .card-container .card .content button {
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  position: absolute;
+  bottom: 50px;
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.Content .card-container .card .content button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.Content .card-container .card .content button .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Tutorial {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Tutorial h1 {
+  font-size: 52px;
+}
+
+.shell-content,
+.sub-shell-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shell-content h1,
+.sub-shell-content h1 {
+  margin-bottom: 50px;
+  font-size: 52px;
+  z-index: 3;
+}
+
+.shell-content .card-container,
+.sub-shell-content .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 58vh;
+}
+
+.shell-content .card-container .box,
+.sub-shell-content .card-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shell-content .card-container .box::before,
+.sub-shell-content .card-container .box::before {
+  content: "";
+  width: 120px;
+  height: 250px;
+  position: absolute;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  border-radius: 4px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shell-content .card-container .box::after,
+.sub-shell-content .card-container .box::after {
+  content: "";
+  width: 120px;
+  height: 250px;
+  position: absolute;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  border-radius: 4px;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shell-content .card-container .box:nth-child(1):before, .shell-content .card-container .box:nth-child(1):after,
+.sub-shell-content .card-container .box:nth-child(1):before,
+.sub-shell-content .card-container .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.shell-content .card-container .box:nth-child(2):before, .shell-content .card-container .box:nth-child(2):after,
+.sub-shell-content .card-container .box:nth-child(2):before,
+.sub-shell-content .card-container .box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.shell-content .card-container .box:nth-child(3):before, .shell-content .card-container .box:nth-child(3):after,
+.sub-shell-content .card-container .box:nth-child(3):before,
+.sub-shell-content .card-container .box:nth-child(3):after {
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.shell-content .card-container .box:hover::before,
+.sub-shell-content .card-container .box:hover::before {
+  width: 120px;
+  height: 450px;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shell-content .card-container .box:hover::after,
+.sub-shell-content .card-container .box:hover::after {
+  content: "";
+  width: 150px;
+  height: 450px;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shell-content .card-container .box:hover .card,
+.sub-shell-content .card-container .box:hover .card {
+  height: 400px;
+  width: 300px;
+  -webkit-box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.2);
+}
+
+.shell-content .card-container .box:hover .card.main,
+.sub-shell-content .card-container .box:hover .card.main {
+  width: 600px;
+}
+
+.shell-content .card-container .box:hover .card .content,
+.sub-shell-content .card-container .box:hover .card .content {
+  opacity: 1;
+}
+
+.shell-content .card-container .box .card,
+.sub-shell-content .card-container .box .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 30px;
+  padding: 30px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  z-index: 2;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.shell-content .card-container .box .card span,
+.sub-shell-content .card-container .box .card span {
+  font-weight: 700;
+  font-size: 200px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  top: -70px;
+  left: 10px;
+}
+
+.shell-content .card-container .box .card .content,
+.sub-shell-content .card-container .box .card .content {
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shell-content .card-container .box .card .content p,
+.sub-shell-content .card-container .box .card .content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.shell-content .card-container .box .card .content table,
+.sub-shell-content .card-container .box .card .content table {
+  border: rgba(255, 255, 255, 0.1);
+}
+
+.shell-content .card-container .box .card .content table tr,
+.sub-shell-content .card-container .box .card .content table tr {
+  border-top: rgba(255, 255, 255, 0.1);
+  border-left: rgba(255, 255, 255, 0.1);
+}
+
+.shell-content .card-container .box .card .content table tr td,
+.sub-shell-content .card-container .box .card .content table tr td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.shell-content button,
+.sub-shell-content button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: inherit;
+  border-radius: 60px;
+  border: none;
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.shell-content button a,
+.sub-shell-content button a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+.shell-content button a:hover::after,
+.sub-shell-content button a:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.shell-content button a::after,
+.sub-shell-content button a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.shell-content button:hover,
+.sub-shell-content button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.shell-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shell-game h1 {
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+  font-size: 72px;
+  position: absolute;
+  top: 50px;
+}
+
+.game-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  display: none;
+}
+
+.game-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.game-container .title {
+  font-size: 60px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.game-container .title:hover::before {
+  background-color: #e4214c;
+}
+
+.game-container .title::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #ff3561;
+  bottom: 0;
+  opacity: 0.9;
+  bottom: -80px;
+  z-index: 0;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.game-container .element {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffeea4;
+  position: relative;
+}
+
+.game-container .element::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  bottom: 390px;
+  right: 690px;
+  opacity: 0.7;
+}
+
+.game-container .element.wrong {
+  color: #ff7575;
+}
+
+.game-container .element.right {
+  color: #15ff00;
+}
+
+.game-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container form input.answer {
+  width: 250%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background: none;
+  background-color: none;
+  border: none;
+  border-bottom: 0.25px solid springgreen;
+  color: white;
+  font-size: 18px;
+  font-family: inherit;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.game-container form input.answer:focus, .game-container form input.answer:hover {
+  outline: none;
+  border-bottom: 0.25px solid #00be56;
+}
+
+.game-container form .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game-container form .buttons-container .start-button-container,
+.game-container form .buttons-container .submit-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.game-container form .buttons-container .start-button-container:hover button,
+.game-container form .buttons-container .submit-button-container:hover button {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.game-container form .buttons-container .start-button-container:hover .box,
+.game-container form .buttons-container .submit-button-container:hover .box {
+  background-color: #15ff00;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.game-container form .buttons-container .start-button-container button,
+.game-container form .buttons-container .submit-button-container button {
+  padding: 15px 30px;
+  margin: 30px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: inherit;
+  border-radius: 60px;
+  border: none;
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 28px -3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.game-container form .buttons-container .start-button-container .box,
+.game-container form .buttons-container .submit-button-container .box {
+  margin: 30px;
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  border-radius: 60px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  opacity: 0.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-transition: 1s background-color;
+  transition: 1s background-color;
+}
+
+.game-container form .buttons-container .start-button-container .box.start,
+.game-container form .buttons-container .submit-button-container .box.start {
+  background-color: #15ff00;
+}
+
+.game-container form .buttons-container .start-button-container .box.submit,
+.game-container form .buttons-container .submit-button-container .box.submit {
+  background-color: #0099ff;
+}
+
+.game-container form .hint {
+  opacity: 0.5;
+}
+
+.score-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px;
+  width: 300px;
+  height: 150px;
+  background: #66617c;
+}
+
+.score-container h2 {
+  position: absolute;
+  color: #d0cce0;
+  top: 20px;
+}
+
+.score-container h1 {
+  position: absolute;
+  top: 40px !important;
+  text-decoration: none;
+}
+
+.bright {
+  color: white;
+}
+
+.sub-shell-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 125vh;
+}
+
+.sub-shell-content h1 {
+  position: absolute;
+  top: 60px;
+}
+
+.sub-shell-content .content-box {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-shell-content .content-box .row {
+  width: 100vw;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  margin: 30px;
+}
+
+.sub-shell-content .content-box .row.r1 {
+  top: 120px;
+}
+
+.sub-shell-content .content-box .row.r2 {
+  bottom: 0px;
+}
+
+.sub-shell-content .content-box .row .orbital {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 750px;
+  height: 100%;
+  padding: 30px;
+  margin-right: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: 50px;
+}
+
+.sub-shell-content .content-box .row .orbital h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #e6e3ec;
+}
+
+.sub-shell-content .content-box .row .orbital p {
+  font-size: 20px;
+  text-align: center;
+  color: #c0bbc9;
+}
+
+.sub-shell-content .content-box button {
+  position: absolute;
+  bottom: -20px;
+}
+
+.sub-shell-content .content-box .spdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 50px;
+  width: 39%;
+  height: 100%;
+  color: #c0b9cc;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 20px;
+  z-index: 3;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sub-shell-content .content-box .spdf table {
+  border: rgba(255, 255, 255, 0.1);
+}
+
+.sub-shell-content .content-box .spdf table tr {
+  border-top: rgba(255, 255, 255, 0.1);
+  border-left: rgba(255, 255, 255, 0.1);
+}
+
+.sub-shell-content .content-box .spdf table tr td {
+  text-align: center;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.sub-shell-content .content-box .hunds-rule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% - 100px);
+  height: 100%;
+  color: #f0edf5;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-left: 0.01px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 30px;
+  z-index: 3;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sub-shell-content .content-box .hunds-rule .center {
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+}
+
+.sub-shell-content .content-box .hunds-rule p {
+  font-size: 20px;
+  text-align: center;
+  color: #c0bbc9;
+}
+
+.sub-shell-content .content-box .hunds-rule ol {
+  font-size: 18px;
+}
+
+.sub-shell-content .content-box:hover .orbital {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.sub-shell-content .content-box:hover .spdf {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image img {
+  width: 600px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */
